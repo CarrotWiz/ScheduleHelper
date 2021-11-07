@@ -123,16 +123,16 @@ def main():
     courses = []
     courses = parseFile(filename)
 
-    ##print("courses from file\n")
+    #print("courses from file\n")
     
-    # for course in courses:
-    #     print(course.getName() + " " + course.getCH() + " \n" )
-    #     print("Prereqs, " )
-    #     reqs = course.getPre_Reqs()
-    #     for prereq in reqs :
-    #         print(prereq.getReqs())
-    #         print(", ")
-    #     print("\n")
+    for course in courses:
+        print(course.getName() + " " + course.getCH() + " \n" )
+        print("Prereqs, " )
+        reqs = course.getPre_Reqs()
+        for prereq in reqs :
+            print(prereq.getReqs())
+            print(", ")
+        print("\n")
 
 #-----------------------------------
     
